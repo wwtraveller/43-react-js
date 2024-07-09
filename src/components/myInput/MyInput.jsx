@@ -21,12 +21,12 @@
 
 import './myInput.css'
 
-export default function MyInput(props) {
+export default function MyInput({label, type, name, placeholder}) {
     
     return (
     <>
-        <label className='label'>{props.label}</label>
-        <input type={props.type} name = {props.name} placeholder={props.placeholder} />
+        <label className='label'>{label}</label>
+        <input type={type} name = {name} placeholder={placeholder} />
     </>
     )
 }
